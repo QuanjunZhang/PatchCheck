@@ -1,0 +1,7 @@
+org.apache.commons.math3.distribution.AbstractIntegerDistribution#int#inverseCumulativeProbability#?,double START#0
+this: {"numberOfSuccesses":42976365,"populationSize":43130568,"sampleSize":50,"numericalVarianceIsCalculated":false,"randomData":{"delegate":{"rand":null,"secRand":null}},"random":{"index":622,"v":{"length":624,"elements":[-1342889794,2064383732,-1424896934,1272951724,-1793514568]},"iRm1":{"length":624,"elements":[623,0,1,2,3]},"iRm2":{"length":624,"elements":[622,623,0,1,2]},"i1":{"length":624,"elements":[70,71,72,73,74]},"i2":{"length":624,"elements":[179,180,181,182,183]},"i3":{"length":624,"elements":[449,450,451,452,453]}}}
+p: {"value":0.36037023878167407}
+this: {"numberOfSuccesses":42976365,"populationSize":43130568,"sampleSize":50,"numericalVariance":0.17812367970822698,"numericalVarianceIsCalculated":true,"randomData":{"delegate":{"rand":null,"secRand":null}},"random":{"index":622,"v":{"length":624,"elements":[-1342889794,2064383732,-1424896934,1272951724,-1793514568]},"iRm1":{"length":624,"elements":[623,0,1,2,3]},"iRm2":{"length":624,"elements":[622,623,0,1,2]},"i1":{"length":624,"elements":[70,71,72,73,74]},"i2":{"length":624,"elements":[179,180,181,182,183]},"i3":{"length":624,"elements":[449,450,451,452,453]}}}
+p: {"value":0.36037023878167407}
+org.apache.commons.math3.distribution.AbstractIntegerDistribution#int#inverseCumulativeProbability#?,double END#0
+solveInverseCumulativeProbability(p,lower,upper): {"value":-50}

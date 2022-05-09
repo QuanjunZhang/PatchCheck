@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	   
+	<extension
+		point="org.eclipse.ui.perspectives">
+		<perspective
+			id="patchfilter.plugin.perspectives.InteractivePerspective"
+			name="Interactive Perspective"
+			class="patchfilter.plugin.perspectives.InteractivePerspective"
+			icon="icons/releng_gears.gif">
+		</perspective>
+	</extension>
+	
+	<extension
+		point="org.eclipse.ui.views">
+		<category
+			name="Patch Category"
+			id="patchfilter">
+		</category>
+		<view
+			id="patchfilter.plugin.views.ProjectView"
+			name="Project View"
+			icon="icons/sample.png"
+			class="patchfilter.plugin.views.ProjectView"
+			category="patchfilter"
+			inject="true">
+		</view>
+		<view
+			id="patchfilter.plugin.views.PatchView"
+			name="Patch View"
+			icon="icons/sample.png"
+			class="patchfilter.plugin.views.PatchView"
+			category="patchfilter"
+			inject="true">
+		</view>
+	</extension>
+	
+	<extension
+		point="org.eclipse.ui.perspectiveExtensions">
+		<perspectiveExtension
+			targetID="org.eclipse.jdt.ui.JavaPerspective">
+			<view
+				id="patchfilter.plugin.views.SampleView"
+				relative="org.eclipse.ui.views.ProblemView"
+				relationship="right"
+				ratio="0.5">
+			</view>
+		</perspectiveExtension>
+	</extension>
+	   
+	<extension
+		point="org.eclipse.help.contexts">
+		<contexts
+			file="contexts.xml">
+		</contexts>
+	</extension>
+	   
+	<breakpoint
+		markerType="org.eclipse.debug.examples.core.pda.lineBreakpoint.marker"
+		class="patchfilter.util.LineLabel"
+		id="patchfilter.util.LineLabel">
+	</breakpoint>
+	    
+	<extension
+		id="patch.lineBreakpoint.marker"
+		point="org.eclipse.core.resources.markers">
+		<super type="org.eclipse.debug.core.lineBreakpointMarker"/>
+		<persistent value="true"/>
+	</extension>
+    
+</plugin>

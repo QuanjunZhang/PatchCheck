@@ -1,0 +1,13 @@
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils#double[]#bracket#?,UnivariateRealFunction,double,double,double,int START#0
+function: {"val$p":0.9772498680518209,"this$0":{"mean":0,"standardDeviation":1}}
+initial: {"value":1}
+lowerBound: {"value":0}
+upperBound: {"value":1.7976931348623157E308}
+maximumIterations: {"value":2147483647}
+function: {"val$p":0.9772498680518209,"this$0":{"mean":0,"standardDeviation":1}}
+initial: {"value":1}
+lowerBound: {"value":0}
+upperBound: {"value":1.7976931348623157E308}
+maximumIterations: {"value":2147483647}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils#double[]#bracket#?,UnivariateRealFunction,double,double,double,int END#0
+new ConvergenceException("number of iterations={0}, maximum iterations={1}, " + "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " + "final b value={6}, f(a)={7}, f(b)={8}",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb): {"pattern":"number of iterations={0}, maximum iterations={1}, initial={2}, lower bound={3}, upper bound={4}, final a value={5}, final b value={6}, f(a)={7}, f(b)={8}","arguments":{"length":9,"elements":[1,2147483647,1,0,1.7976931348623157E308]},"detailMessage":"number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f(a)=-0.477, f(b)=0","cause":{"pattern":"number of iterations={0}, maximum iterations={1}, initial={2}, lower bound={3}, upper bound={4}, final a value={5}, final b value={6}, f(a)={7}, f(b)={8}","arguments":"<null>","detailMessage":"number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f(a)=-0.477, f(b)=0","cause":"<null>","stackTrace":{"length":0,"elements":[]},"suppressedExceptions":{"list":"<null>","c":"<null>"}},"stackTrace":"<null>","suppressedExceptions":"<null>"}

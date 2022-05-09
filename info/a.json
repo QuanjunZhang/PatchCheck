@@ -1,0 +1,1175 @@
+{
+	"patchName": {
+		"aliaName": "Patch1",
+		"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+		"correctness": false,
+		"deleteLine": [
+			"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+		],
+		"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length & 2) != 0) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+		"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+		"isMultiModify": false,
+		"lineRange": 7,
+		"modifiedMethod": "",
+		"modify": true,
+		"modifyLine": 323,
+		"multiModify": false,
+		"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length & 2) != 0) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+		"patchName": "Cardumen-patch1",
+		"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch1",
+		"startLine": 319,
+		"subject": {
+			"allTestRecFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/all-tests.txt",
+			"dependency": "D:/Graduation/Dataset/defects4j/major/lib/junit-4.11.jar:D:/Graduation/InPaFer/lib:target/test-classes:target/classesD:/Graduation/InPaFer/lib",
+			"failedTestList": [
+				"org.apache.commons.math.stat.descriptive.moment.VarianceTest::testEvaluateArraySegmentWeighted"
+			],
+			"failedTestRecFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/failing_tests",
+			"home": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy",
+			"id": 41,
+			"instrumentPackage": [
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\transform",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry\\euclidean",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry\\euclidean\\threed",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\linear",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\optimization\\fitting",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\ranking",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\genetics",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry\\euclidean\\twod",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\analysis\\interpolation",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\descriptive\\summary",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\random",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\analysis\\polynomials",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\distribution",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\descriptive\\rank",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\correlation",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\ode\\sampling",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\analysis\\solvers",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\optimization\\linear",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\descriptive\\moment",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\complex",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry\\euclidean\\oned",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry\\partitioning\\utilities",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\optimization\\general",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\special",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry\\partitioning\\utilities\\doc-files",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\optimization\\direct",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\ode\\nonstiff",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\dfp",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\ode",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\analysis\\integration",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\optimization",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\inference",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\exception",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\fraction",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\ode\\events",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\analysis\\function",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\exception\\util",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\util",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\filter",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\analysis",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\descriptive",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\regression",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\stat\\clustering",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\optimization\\univariate",
+				"D:\\Graduation\\Dataset\\Projects\\Math\\Math_41_buggy\\src\\main\\java\\org\\apache\\commons\\math\\geometry\\partitioning"
+			],
+			"name": "Math",
+			"patchList": [
+				{
+					"$ref": "$.patchName"
+				},
+				{
+					"aliaName": "Patch2",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length < 7) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if (length < 7) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch10",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch10",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch3",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (begin < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (begin < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch11",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch11",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch4",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 5) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (length > 5) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch12",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch12",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch5",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length & 2) != 0) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length & 2) != 0) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch13",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch13",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch6",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length - begin) > 5) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length - begin) > 5) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch14",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch14",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch7",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 5) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (length > 5) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch15",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch15",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch8",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif ((length <= 6) || ((length % 2) != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif ((length <= 6) || ((length % 2) != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch16",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch16",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch9",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if ((length == 5) && (length != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if ((length == 5) && (length != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch17",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch17",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch10",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (((length & 1) == 0) && ((begin & 1) == 0)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (((length & 1) == 0) && ((begin & 1) == 0)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch18",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch18",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch11",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 5) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if (length == 5) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch19",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch19",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch12",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length & 1) == 0) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length & 1) == 0) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch2",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch2",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch13",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if ((length <= 6) || ((length % 2) != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if ((length <= 6) || ((length % 2) != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch20",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch20",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch14",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length % 2) == 0) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length % 2) == 0) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch21",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch21",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch15",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((((length & 1) == 0) && ((begin & 1) == 0)) && (length < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((((length & 1) == 0) && ((begin & 1) == 0)) && (length < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch22",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch22",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch16",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length <= 0) || (length >= 7)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length <= 0) || (length >= 7)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch23",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch23",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch17",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif ((length & 1) == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif ((length & 1) == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch24",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch24",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch18",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length - begin) > 5) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length - begin) > 5) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch25",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch25",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch19",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (((length & 1) == 0) && ((length & 1) == 0)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (((length & 1) == 0) && ((length & 1) == 0)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch26",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch26",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch20",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif ((length % 2) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif ((length % 2) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch27",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch27",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch21",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (begin < 31)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (begin < 31)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch28",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch28",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch22",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if ((length % 2) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if ((length % 2) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch29",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch29",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch23",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif ((length == 5) && (length != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif ((length == 5) && (length != 0)) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch3",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch3",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch24",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (incMoment = length > 5) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (incMoment = length > 5) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch30",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch30",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch25",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length >= 7) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (length >= 7) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch31",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch31",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch26",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (((begin & 1) == 0) && ((length & 1) == 0)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (((begin & 1) == 0) && ((length & 1) == 0)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch32",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch32",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch27",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif (length == 5) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif (length == 5) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch33",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch33",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch28",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length <= 0) || (length >= 7)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length <= 0) || (length >= 7)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch34",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch34",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch29",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (((length & 1) == 0) && ((begin & 1) == 0)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (((length & 1) == 0) && ((begin & 1) == 0)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch35",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch35",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch30",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((((length & 1) == 0) && ((begin & 1) == 0)) && (begin < 31)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((((length & 1) == 0) && ((begin & 1) == 0)) && (begin < 31)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch36",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch36",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch31",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length % 2) == 0) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length % 2) == 0) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch37",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch37",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch32",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif ((length & 1) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif ((length & 1) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch38",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch38",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch33",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif (length <= 6) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif (length <= 6) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch39",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch39",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch34",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (mean >= length) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if (mean >= length) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch4",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch4",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch35",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if ((length & 1) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if ((length & 1) != 0) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch40",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch40",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch36",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length >= 7) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (length >= 7) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch41",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch41",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch37",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (isBiasCorrected = length > 5) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (isBiasCorrected = length > 5) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch42",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch42",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch38",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if ((length & 1) == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if ((length & 1) == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch43",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch43",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch39",
+					"buggyContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#322"
+					],
+					"fixedContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (length < 31)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 323,
+					"multiModify": false,
+					"patchContent": "             clear();\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (length < 31)) {\r\n                 Mean mean = new Mean();\r\n                 double m = mean.evaluate(values, weights, begin, length);\r\n                 var = evaluate(values, weights, m, begin, length);\r\n",
+					"patchName": "Cardumen-patch44",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch44",
+					"startLine": 319,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch40",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (length < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((((length & 1) == 0) && ((length & 1) == 0)) && (length < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch45",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch45",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch41",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (mean < length) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (mean < length) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch46",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch46",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch42",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((length & 1) == 0) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((length & 1) == 0) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch5",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch5",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch43",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if ((((length & 1) == 0) && ((begin & 1) == 0)) && (begin < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if ((((length & 1) == 0) && ((begin & 1) == 0)) && (begin < 31)) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch6",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch6",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch44",
+					"buggyContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#320"
+					],
+					"fixedContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n \t\t\tif (length < 7) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 321,
+					"multiModify": false,
+					"patchContent": " \r\n         if (test(values, weights,begin, length)) {\r\n             clear();\r\n-            if (length == 1) {\r\n+ \t\t\tif (length < 7) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 Mean mean = new Mean();\r\n",
+					"patchName": "Cardumen-patch7",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch7",
+					"startLine": 317,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch45",
+					"buggyContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length == 1) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#507"
+					],
+					"fixedContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n            if (length <= 6) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 508,
+					"multiModify": false,
+					"patchContent": "         double var = Double.NaN;\r\n \r\n         if (test(values, weights, begin, length)) {\r\n-            if (length == 1) {\r\n+            if (length <= 6) {\r\n                 var = 0.0;\r\n             } else if (length > 1) {\r\n                 double accum = 0.0;\r\n",
+					"patchName": "Cardumen-patch8",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch8",
+					"startLine": 504,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch46",
+					"buggyContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length > 1) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#509"
+					],
+					"fixedContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n            } else if (length >= mean) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 510,
+					"multiModify": false,
+					"patchContent": "         if (test(values, weights, begin, length)) {\r\n             if (length == 1) {\r\n                 var = 0.0;\r\n-            } else if (length > 1) {\r\n+            } else if (length >= mean) {\r\n                 double accum = 0.0;\r\n                 double dev = 0.0;\r\n                 double accum2 = 0.0;\r\n",
+					"patchName": "Cardumen-patch9",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Cardumen-patch9",
+					"startLine": 506,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch47",
+					"buggyContent": "             for (int i = begin; i < begin + length; i++) {\r\n                 correction += weights[i] * (values[i] - xbarw);\r\n             }\r\n             return xbarw + (correction/sumw);\r\n         }\r\n         return Double.NaN;\r\n     }\r\n \r\n",
+					"correctness": false,
+					"deleteLine": [],
+					"fixedContent": "             for (int i = begin; i < begin + length; i++) {\r\n                 correction += weights[i] * (values[i] - xbarw);\r\n             }\r\n            if (xbarw < length) {\r\n             return xbarw + (correction/sumw);\r\n         }\r\n        }\r\n         return Double.NaN;\r\n     }\r\n \r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Mean.java",
+					"isMultiModify": false,
+					"lineRange": 8,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 218,
+					"multiModify": false,
+					"patchContent": "             for (int i = begin; i < begin + length; i++) {\r\n                 correction += weights[i] * (values[i] - xbarw);\r\n             }\r\n+            if (xbarw < length) {\r\n             return xbarw + (correction/sumw);\r\n         }\r\n+        }\r\n         return Double.NaN;\r\n     }\r\n \r\n",
+					"patchName": "Nopol2017-Patch162",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\Nopol2017-Patch162",
+					"startLine": 214,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				},
+				{
+					"aliaName": "Patch48",
+					"buggyContent": "                 }\r\n \r\n                 double sumWts = 0;\r\n                for (int i = 0; i < weights.length; i++) {\r\n                     sumWts += weights[i];\r\n                 }\r\n \r\n",
+					"correctness": false,
+					"deleteLine": [
+						"D:.Graduation.Dataset.Projects.Math.Math_41_buggy.src.main.java.org.apache.commons.math.stat.descriptive.moment.Variance.java#520"
+					],
+					"fixedContent": "                 }\r\n \r\n                 double sumWts = 0;\r\n                for (int i = begin; i < (begin + length); i++) {\r\n                     sumWts += weights[i];\r\n                 }\r\n \r\n",
+					"fixedFile": "D:/Graduation/Dataset/Projects/Math/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+					"isMultiModify": false,
+					"lineRange": 7,
+					"modifiedMethod": "",
+					"modify": true,
+					"modifyLine": 521,
+					"multiModify": false,
+					"patchContent": "                 }\r\n \r\n                 double sumWts = 0;\r\n-                for (int i = 0; i < weights.length; i++) {\r\n+                for (int i = begin; i < (begin + length); i++) {\r\n                     sumWts += weights[i];\r\n                 }\r\n \r\n",
+					"patchName": "SimFix-1",
+					"patchPath": "D:\\Graduation\\InPaFer\\FinalPatch\\Math\\41\\SimFix-1",
+					"startLine": 517,
+					"subject": {
+						"$ref": "$.patchName.subject"
+					}
+				}
+			],
+			"sbin": "/target/classes",
+			"ssrc": "/src/main/java",
+			"tbin": "/target/test-classes",
+			"testClasses": [],
+			"tsrc": "/src/test/java"
+		}
+	}
+}

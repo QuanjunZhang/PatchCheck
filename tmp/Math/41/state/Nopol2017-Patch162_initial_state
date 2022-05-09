@@ -1,0 +1,26 @@
+org.apache.commons.math.stat.descriptive.moment.Mean#double#evaluate#?,double[],double[],int,int START#0
+this: {"moment":{"n":0,"storedData":null},"incMoment":true,"storedData":null}
+values: {"length":5,"elements":[12.5,12,11.8,14.2,14.9]}
+weights: {"length":5,"elements":[1.5,0.8,1.2,0.4,0.8]}
+begin: {"value":0}
+length: {"value":5}
+this: {"moment":{"n":0,"storedData":null},"incMoment":true,"storedData":null}
+values: {"length":5,"elements":[12.5,12,11.8,14.2,14.9]}
+weights: {"length":5,"elements":[1.5,0.8,1.2,0.4,0.8]}
+begin: {"value":0}
+length: {"value":5}
+org.apache.commons.math.stat.descriptive.moment.Mean#double#evaluate#?,double[],double[],int,int END#0
+xbarw + (correction / sumw): {"value":12.78936170212766}
+org.apache.commons.math.stat.descriptive.moment.Mean#double#evaluate#?,double[],double[],int,int START#0
+this: {"moment":{"n":0,"storedData":null},"incMoment":true,"storedData":null}
+values: {"length":22,"elements":[12.5,12,11.8,14.2,14.9]}
+weights: {"length":22,"elements":[1.5,0.8,1.2,0.4,0.8]}
+begin: {"value":0}
+length: {"value":5}
+this: {"moment":{"n":0,"storedData":null},"incMoment":true,"storedData":null}
+values: {"length":22,"elements":[12.5,12,11.8,14.2,14.9]}
+weights: {"length":22,"elements":[1.5,0.8,1.2,0.4,0.8]}
+begin: {"value":0}
+length: {"value":5}
+org.apache.commons.math.stat.descriptive.moment.Mean#double#evaluate#?,double[],double[],int,int END#0
+xbarw + (correction / sumw): {"value":12.78936170212766}

@@ -1,0 +1,13 @@
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils#double[]#bracket#?,UnivariateRealFunction,double,double,double,int START#0
+function: {"val$p":0.9772498680518209,"this$0":{"mean":0,"standardDeviation":1}}
+initial: {"value":1}
+lowerBound: {"value":0}
+upperBound: {"value":1.7976931348623157E308}
+maximumIterations: {"value":2147483647}
+function: {"val$p":0.9772498680518209,"this$0":{"mean":0,"standardDeviation":1}}
+initial: {"value":1}
+lowerBound: {"value":0}
+upperBound: {"value":1.7976931348623157E308}
+maximumIterations: {"value":2147483647}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils#double[]#bracket#?,UnivariateRealFunction,double,double,double,int END#0
+new double[]{a,b}: {"length":2,"elements":[0,2]}

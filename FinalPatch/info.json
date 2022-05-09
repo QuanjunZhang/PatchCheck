@@ -1,0 +1,1542 @@
+[
+    {
+        "ID": "Patch1",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "1",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch10",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "13",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch100",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "10",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch101",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "12",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch102",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "14",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch103",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "15",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch104",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "16",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch105",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "17",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch106",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "18",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch107",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "20",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch108",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "21",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch109",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "22",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch11",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "13",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch110",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "26",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch111",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "28",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch112",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "29",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch113",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "30",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch114",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "31",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch115",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "33",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch116",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "35",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch117",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "36",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch118",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "38",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch119",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "40",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch12",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "15",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch120",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "45",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch121",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "49",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch122",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "50",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch123",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "55",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch124",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "60",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch125",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "61",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch126",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "62",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch127",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "63",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch128",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "66",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch129",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "67",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch13",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "15",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch130",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "72",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch131",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "75",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch132",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "76",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch133",
+        "tool": "Nopol2017",
+        "correctness": "Correct",
+        "bug_id": "78",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch134",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "111",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch135",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "113",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch136",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "114",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch137",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "115",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch138",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "116",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch139",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "119",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch14",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "21",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch140",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "120",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch141",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "121",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch142",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "124",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch143",
+        "tool": "Nopol2017",
+        "correctness": "Correct",
+        "bug_id": "126",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch144",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "127",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch145",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "129",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch146",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "130",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch147",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "131",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch148",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "132",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch149",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "133",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch15",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "25",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch150",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "44",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch151",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "51",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch152",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "53",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch153",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "58",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch154",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "2",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch155",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "4",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch156",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "7",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch157",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "24",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch158",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "28",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch159",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "33",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch16",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "25",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch160",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "39",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch161",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "40",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch162",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "41",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch163",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "42",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch164",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "44",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch165",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "49",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch166",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "50",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch167",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "57",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch168",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "58",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch169",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "69",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch17",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "25",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch170",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "73",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch171",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "78",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch172",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "80",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch173",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "81",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch174",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "85",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch175",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "87",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch176",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "88",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch177",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "105",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch178",
+        "tool": "Nopol2017",
+        "correctness": "Correct",
+        "bug_id": "29",
+        "project": "Mockito"
+    },
+    {
+        "ID": "Patch179",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "38",
+        "project": "Mockito"
+    },
+    {
+        "ID": "Patch18",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "26",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch180",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "4",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch181",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "7",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch182",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "11",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch183",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "12",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch184",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "14",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch185",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "16",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch186",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "18",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch187",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "19",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch188",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "14",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch189",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "19",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch19",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "26",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch190",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "7",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch191",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "24",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch192",
+        "tool": "ACS",
+        "correctness": "Incorrect",
+        "bug_id": "35",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch193",
+        "tool": "ACS",
+        "correctness": "Incorrect",
+        "bug_id": "39",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch194",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "3",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch195",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "4",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch196",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "5",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch197",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "25",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch198",
+        "tool": "ACS",
+        "correctness": "Incorrect",
+        "bug_id": "28",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch199",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "35",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch2",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "1",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch20",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "39",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch200",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "61",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch201",
+        "tool": "ACS",
+        "correctness": "Incorrect",
+        "bug_id": "73",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch202",
+        "tool": "ACS",
+        "correctness": "Incorrect",
+        "bug_id": "81",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch203",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "82",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch204",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "85",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch205",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "89",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch206",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "90",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch207",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "93",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch208",
+        "tool": "ACS",
+        "correctness": "Incorrect",
+        "bug_id": "97",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch209",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "99",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch21",
+        "tool": "Nopol2015",
+        "correctness": "Correct",
+        "bug_id": "44",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch210",
+        "tool": "ACS",
+        "correctness": "Correct",
+        "bug_id": "15",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch22",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "46",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch23",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "51",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch24",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "53",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch25",
+        "tool": "Nopol2015",
+        "correctness": "Correct",
+        "bug_id": "55",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch26",
+        "tool": "Nopol2015",
+        "correctness": "Correct",
+        "bug_id": "58",
+        "project": "Lang"
+    },
+    {
+        "ID": "Patch27",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "2",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch28",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "2",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch29",
+        "tool": "jGenprog",
+        "correctness": "Correct",
+        "bug_id": "5",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch3",
+        "tool": "jGenprog",
+        "correctness": "Correct",
+        "bug_id": "3",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch30",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "8",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch31",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "8",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch32",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "28",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch33",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "28",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch34",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "32",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch35",
+        "tool": "Nopol2015",
+        "correctness": "Unknown",
+        "bug_id": "32",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch36",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "33",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch37",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "40",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch38",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "40",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch39",
+        "tool": "Nopol2015",
+        "correctness": "Unknown",
+        "bug_id": "40",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch4",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "3",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch40",
+        "tool": "Nopol2015",
+        "correctness": "Unknown",
+        "bug_id": "42",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch41",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "49",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch42",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "49",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch43",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "49",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch44",
+        "tool": "jGenprog",
+        "correctness": "Correct",
+        "bug_id": "50",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch45",
+        "tool": "jKali",
+        "correctness": "Correct",
+        "bug_id": "50",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch46",
+        "tool": "Nopol2015",
+        "correctness": "Correct",
+        "bug_id": "50",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch47",
+        "tool": "jGenprog",
+        "correctness": "Correct",
+        "bug_id": "53",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch48",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "57",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch49",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "58",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch5",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "5",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch50",
+        "tool": "Nopol2015",
+        "correctness": "Unknown",
+        "bug_id": "69",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch51",
+        "tool": "jGenprog",
+        "correctness": "Correct",
+        "bug_id": "70",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch52",
+        "tool": "jGenprog",
+        "correctness": "Unknown",
+        "bug_id": "71",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch53",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "71",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch54",
+        "tool": "jGenprog",
+        "correctness": "Correct",
+        "bug_id": "73",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch55",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "73",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch56",
+        "tool": "jGenprog",
+        "correctness": "Unknown",
+        "bug_id": "78",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch57",
+        "tool": "jKali",
+        "correctness": "Unknown",
+        "bug_id": "78",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch58",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "78",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch59",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "80",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch6",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "5",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch60",
+        "tool": "jKali",
+        "correctness": "Unknown",
+        "bug_id": "80",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch61",
+        "tool": "Nopol2015",
+        "correctness": "Unknown",
+        "bug_id": "80",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch62",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "81",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch63",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "81",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch64",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "81",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch65",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "82",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch66",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "82",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch67",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "82",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch68",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "84",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch69",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "84",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch7",
+        "tool": "Nopol2015",
+        "correctness": "Correct",
+        "bug_id": "5",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch70",
+        "tool": "jGenprog",
+        "correctness": "Unknown",
+        "bug_id": "85",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch71",
+        "tool": "jKali",
+        "correctness": "Unknown",
+        "bug_id": "85",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch72",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "85",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch73",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "87",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch74",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "88",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch75",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "95",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch76",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "95",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch77",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "97",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch78",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "104",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch79",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "105",
+        "project": "Math"
+    },
+    {
+        "ID": "Patch8",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "7",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch80",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "4",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch81",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "4",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch82",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "11",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch83",
+        "tool": "jKali",
+        "correctness": "Incorrect",
+        "bug_id": "11",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch84",
+        "tool": "Nopol2015",
+        "correctness": "Incorrect",
+        "bug_id": "11",
+        "project": "Time"
+    },
+    {
+        "ID": "Patch85",
+        "tool": "Nopol2017",
+        "correctness": "Unknown",
+        "bug_id": "3",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch86",
+        "tool": "Nopol2017",
+        "correctness": "Unknown",
+        "bug_id": "4",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch87",
+        "tool": "Nopol2017",
+        "correctness": "Unknown",
+        "bug_id": "5",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch88",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "9",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch89",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "13",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch9",
+        "tool": "jGenprog",
+        "correctness": "Incorrect",
+        "bug_id": "13",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch90",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "17",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch91",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "21",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch92",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "25",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch93",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "26",
+        "project": "Chart"
+    },
+    {
+        "ID": "Patch94",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "1",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch95",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "2",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch96",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "3",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch97",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "5",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch98",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "7",
+        "project": "Closure"
+    },
+    {
+        "ID": "Patch99",
+        "tool": "Nopol2017",
+        "correctness": "Incorrect",
+        "bug_id": "8",
+        "project": "Closure"
+    },
+    {
+        "ID": "PatchHDRepair1",
+        "tool": "HDRepair",
+        "correctness": "Correct",
+        "project": "Lang",
+        "bug_id": "57"
+    },
+    {
+        "ID": "PatchHDRepair10",
+        "tool": "HDRepair",
+        "correctness": "Correct",
+        "project": "Time",
+        "bug_id": "19"
+    },
+    {
+        "ID": "PatchHDRepair2",
+        "tool": "HDRepair",
+        "correctness": "Incorrect",
+        "project": "Lang",
+        "bug_id": "6"
+    },
+    {
+        "ID": "PatchHDRepair3",
+        "tool": "HDRepair",
+        "correctness": "Incorrect",
+        "project": "Math",
+        "bug_id": "22"
+    },
+    {
+        "ID": "PatchHDRepair4",
+        "tool": "HDRepair",
+        "correctness": "Correct",
+        "project": "Math",
+        "bug_id": "34"
+    },
+    {
+        "ID": "PatchHDRepair5",
+        "tool": "HDRepair",
+        "correctness": "Incorrect",
+        "project": "Math",
+        "bug_id": "50"
+    },
+    {
+        "ID": "PatchHDRepair6",
+        "tool": "HDRepair",
+        "correctness": "Incorrect",
+        "project": "Math",
+        "bug_id": "53"
+    },
+    {
+        "ID": "PatchHDRepair7",
+        "tool": "HDRepair",
+        "correctness": "Correct",
+        "project": "Math",
+        "bug_id": "70"
+    },
+    {
+        "ID": "PatchHDRepair8",
+        "tool": "HDRepair",
+        "correctness": "Incorrect",
+        "project": "Math",
+        "bug_id": "82"
+    },
+    {
+        "ID": "PatchHDRepair9",
+        "tool": "HDRepair",
+        "correctness": "Incorrect",
+        "project": "Math",
+        "bug_id": "85"
+    }
+]
